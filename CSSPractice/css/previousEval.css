@@ -1,32 +1,49 @@
-
 .navbar-mobile {
-        justify-content: space-between;
-        display: flex;
-        background-color:chocolate;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Keeps logo and burger vertically centered */
+    background-color: chocolate;
+    padding: 10px 20px;
+    position: relative; /* CRITICAL: Acts as an anchor for the menu */
+}
 
-    .list-items-mobile {
-        display: none;
-        gap: 10px;
-        list-style: none;
-    }
+.list-items-mobile {
+    display: none;
+}
 
-    .list-items-mobile.active {
-        display: grid;
-        gap: 10px;
-        list-style: none;
-    }
+.list-items-mobile.active {
+    display: grid;
+    gap: 10px;
+    list-style: none;
 
-    .navbar-desktop {
-        display: none;
-    }
+    /* New styles to fix the jump */
+    position: absolute;
+    top: 100%;
+    /* Sits directly below the navbar */
+    left: 0;
+    width: 100%;
+    /* Covers the full width of the screen */
+    background-color: chocolate;
+    padding: 20px;
+    z-index: 10;
+    /* Ensures it stays on top of other content */
+}
+
+.hamburger-icon {
+    position: absolute;
+    right: 0px;
+}
+
+.navbar-desktop {
+    display: none;
+}
 
 
 
-/*for screens wider than 780*/
+/*for screens wider than 768px*/
 @media (min-width: 768px) {
     .navbar-desktop {
-        background-color:cholocate;
+        background-color: chocolate;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -35,7 +52,7 @@
     .list-items-desktop {
         display: flex;
         gap: 20px;
-        list-style:none;
+        list-style: none;
     }
 
     .navbar-mobile {
@@ -48,7 +65,6 @@
 
     .hamburger-icon {
         display: flex;
-
     }
 
 }
