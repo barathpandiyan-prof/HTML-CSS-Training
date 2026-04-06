@@ -1,0 +1,83 @@
+h1{
+    color:green;
+    text-decoration:underline;
+}
+
+.class-2{
+    color:blue;
+}
+
+.font-styles{
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 200;
+    font-style:italic;
+    text-align:justify;
+}
+
+.div-class {
+    background-color: grey;
+    border: 2px solid black;
+    height: 50px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    /* padding-left: 40px;
+    padding-top: 20px; */
+}
+
+.span-class{
+    border: 2px solid grey;
+    /* padding: 20px; */
+    margin: 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.navbar {
+  display: flex;
+  position:sticky;
+  top:0px;
+  justify-content:space-between; /* Puts logo on left, links on right */
+  align-items: center;            /* Vertically centers both */
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: 2px solid black;
+}
+
+.nav-links {
+  display: flex;                  /* Makes list items sit side-by-side */
+  gap: 20px;                      /* Easy spacing between items */
+  list-style: none;
+  border: 2px solid black;
+}
+
+.container {
+  display: grid;
+  /* Creates 3 columns: 200px sidebar, and 2 flexible parts for main */
+  grid-template-columns: 200px 1fr 1fr;
+  /* Creates 3 rows with specific heights */
+  grid-template-rows: 80px auto 60px;
+  gap: 10px;
+}
+
+header { grid-column: 1 / 4; } /* Spans across all 3 columns */
+footer { grid-column: 1 / 4; } /* Spans across all 3 columns */
+aside  { grid-row: 2 / 3; }    /* Sits in the middle row */
+
+.chat{
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 30px;
+    height:50px;
+    width: 50px;
+    text-align: center;
+    padding-top:5px;
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Previous Evaluation </title>
+    <link rel="stylesheet" href="css/previousEval.css">
+</head>
+
+<body>
+
+    <nav class="navbar-desktop">
+        <div class="logo"> Logo</div>
+        <ul class="list-items-desktop">
+            <li> Home </li>
+            <li> About </li>
+            <li> Pricing </li>
+            <li> Contact </li>
+        </ul>
+    </nav>
+
+    <nav class="navbar-mobile">
+        <div class="logo"> Logo </div>
+        <div id="hamburger-icon" class="hambuger-icon">☰</div>
+        <ul class="list-items-mobile" id="mobile-menu-items">
+            <li> Home </li>
+            <li> About </li>
+            <li> Pricing </li>
+            <li> Contact </li>
+        </ul>
+
+    </nav>
+
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const mobileMenuItems = document.getElementById('mobile-menu-items');
+        hamburgerIcon.onclick = function () {
+            mobileMenuItems.classList.toggle('active');
+        };
+    </script>
+</body>
+
+</html>

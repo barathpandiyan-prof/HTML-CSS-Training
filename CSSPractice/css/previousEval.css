@@ -1,0 +1,54 @@
+
+.navbar-mobile {
+        justify-content: space-between;
+        display: flex;
+        background-color:chocolate;
+    }
+
+    .list-items-mobile {
+        display: none;
+        gap: 10px;
+        list-style: none;
+    }
+
+    .list-items-mobile.active {
+        display: grid;
+        gap: 10px;
+        list-style: none;
+    }
+
+    .navbar-desktop {
+        display: none;
+    }
+
+
+
+/*for screens wider than 780*/
+@media (min-width: 768px) {
+    .navbar-desktop {
+        background-color:cholocate;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-items-desktop {
+        display: flex;
+        gap: 20px;
+        list-style:none;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .list-items-mobile {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+
+    }
+
+}
