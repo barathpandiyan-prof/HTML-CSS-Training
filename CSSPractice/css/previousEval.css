@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center; /* Keeps logo and burger vertically centered */
-    background-color: chocolate;
+    background-color: lightskyblue;
     padding: 10px 20px;
-    position: relative; /* CRITICAL: Acts as an anchor for the menu */
+    position:relative; /* CRITICAL: Acts as an anchor for the menu */
 }
 
 .list-items-mobile {
@@ -13,20 +13,19 @@
 
 .list-items-mobile.active {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
-
-    /* New styles to fix the jump */
-    position: absolute;
-    top: 100%;
-    /* Sits directly below the navbar */
-    left: 0;
-    width: 100%;
-    /* Covers the full width of the screen */
-    background-color: chocolate;
+    background-color:white;
+    border-style:groove;
+    border: 2px solid lightskyblue;
+    
+    
+    position:absolute;
+    top: 100%;          /* Sits directly below the navbar */
+    right: 0;           /* Keeps the menu items to the right side */
+    width: auto%;       /* Covers the full width of the screen */
     padding: 20px;
-    z-index: 10;
-    /* Ensures it stays on top of other content */
+    z-index: 10;        /* Ensures it stays on top of other content */
 }
 
 .hamburger-icon {
@@ -43,7 +42,7 @@
 /*for screens wider than 768px*/
 @media (min-width: 768px) {
     .navbar-desktop {
-        background-color: chocolate;
+        background-color: lightskyblue;
         display: flex;
         justify-content: space-between;
         align-items: center;
